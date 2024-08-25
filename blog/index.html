@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chesscomputer - Blog</title>
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <header>
+        <h1>chesscomputer</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Título do Post 1</h2>
+            <p>Publicado em 25 de agosto de 2024</p>
+            <img src="imagem1.jpg" alt="Descrição da imagem 1">
+            <p>Este é o conteúdo do primeiro post no blog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. A imagem acima é uma ilustração do tema discutido.</p>
+        </article>
+
+        <article>
+            <h2>Título do Post 2</h2>
+            <p>Publicado em 24 de agosto de 2024</p>
+            <img src="imagem2.jpg" alt="Descrição da imagem 2">
+            <p>Este é o conteúdo do segundo post no blog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. A imagem acima é uma ilustração do tema discutido.</p>
+        </article>
+
+        <article>
+            <h2>Título do Post 3</h2>
+            <p>Publicado em 23 de agosto de 2024</p>
+            <img src="imagem3.jpg" alt="Descrição da imagem 3">
+            <p>Este é o conteúdo do terceiro post no blog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. A imagem acima é uma ilustração do tema discutido.</p>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Sobre Mim</h2>
+        <p>Lorem ipsum</p>
+    </aside>
+
+       <footer>
+        <p>&copy; <span id="current-year"></span> "<a href="https://chesscomputer.github.io/index.html" target="_blank">chesscomputer</a>" - Todos os direitos reservados.</p>
+        <a href="https://raw.githubusercontent.com/HUMANOREAL/chesscomputer.github.io/main/LICENSE" target="_blank">Apache License</a>
+    </footer>
+
+    <script>
+        // Função para atualizar o ano atual
+        function atualizarAno() {
+            var anoAtual = new Date().getFullYear();
+            document.getElementById('current-year').textContent = anoAtual;
+        }
+        
+        // Chama a função para atualizar o ano ao carregar a página
+        window.onload = atualizarAno;
+    </script>
+    <script src="calc.js"></script>
+</body>
+</html>
