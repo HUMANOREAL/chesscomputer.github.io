@@ -9,6 +9,7 @@ function initGame() {
         position: 'start',
         onDrop: handleMove
     });
+    console.log('Tabuleiro inicializado');
 }
 
 // função para processar o movimento do jogador
@@ -91,6 +92,7 @@ function getPieceValue(piece) {
 // função para fazer o melhor movimento
 function makeBestMove() {
     let bestMove = minimax(3, true); // profundidade 3 para o Minimax (podendo variar de 1 + básico 5 + complexo)
+    console.log(`Nível de dificuldade (Profundidade Minimax): 3`); // mostrar no log o nível da dificuldade
     if (bestMove) {
         game.move(bestMove);
         board.position(game.fen());
