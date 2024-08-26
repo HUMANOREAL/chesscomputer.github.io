@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chesscomputer - IA</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard-1.0.0.min.css"/>
+</head>
+<body>
+    <div id="board" style="width: 400px"></div>
+    <button id="resetBtn">Reiniciar Jogo</button>
+    <script src="chess-ai.js"></script>
+    <p>Em desenvolvimento BETA</p>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> "<a href="https://chesscomputer.github.io/index.html" target="_blank">chesscomputer</a>" - Todos os direitos reservados.</p>
+        <a href="https://raw.githubusercontent.com/HUMANOREAL/chesscomputer.github.io/main/LICENSE" target="_blank">Apache License</a>
+    </footer>
+
+    <script>
+        // desenvolvedor preguiçoso autatizando o footer da página
+        function atualizarAno() {
+            var anoAtual = new Date().getFullYear();
+            document.getElementById('current-year').textContent = anoAtual;
+        }
+      
+        window.onload = atualizarAno;
+        console.log('atualizarAno')
+    </script>
+</body>
+</html>
